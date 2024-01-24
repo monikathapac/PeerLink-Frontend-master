@@ -1,0 +1,45 @@
+
+.conhead{
+    background-image: url(/_next/static/media/topwave.ca2c923d.svg), url(/_next/static/media/reviewbg.05719bb4.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top;
+    background-size: contain, cover;
+    overflow: hidden;
+    padding: 60px 0px;
+    display: flexbox;
+    flex-direction: row;
+    align-items: left;
+   padding-left: 35px;
+}
+
+
+
+.cimage{
+    display: flexbox;
+  position: relative;
+    margin-right: 10px;
+    transition: background 0.5s,transform 0.5s;
+
+}
+
+.cimage:hover{
+    color: rgb(219, 90, 26);
+    transform: translate(9px);
+   }
+
+.cspan{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.mail{
+    font-size: 13px;
+
+}
+
+
+
+.mail span{
+    cursor: pointer;
+}

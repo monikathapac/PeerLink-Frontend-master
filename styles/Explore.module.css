@@ -1,0 +1,100 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+}
+
+.container .filters {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters input {
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.content h4 {
+  margin: 0px;
+  margin-bottom: 5px;
+  color: #213053;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.filters .radio {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.9rem;
+  color: rgb(90, 90, 90);
+}
+
+.filters .radio input {
+  margin: 0px;
+  width: fit-content;
+  margin-right: 10px;
+  color: #213053;
+  padding: 0px;
+}
+
+.container .results {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileFilters {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .container .filters {
+    display: none;
+  }
+
+  .container .results {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .mobileFilters {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: -30px;
+    padding: 0px 10px;
+  }
+
+  .mobileFilters input {
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 5px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,102 @@
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #213053;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 0.4rem;
+}
+
+.Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+.notification {
+  display: flex;
+  gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 1rem;
+  width: 30rem;
+}
+.notification p {
+  font-size: 16px;
+}
+.connection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 190px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgba(223, 223, 223, 0.7);
+  padding: 10px;
+}
+
+.connection .picture {
+  height: 150px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(15, 25, 26, 0.5);
+  object-fit: fill;
+}
+
+.connection h3 {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #213053;
+  margin-top: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.connection h3:hover {
+  text-decoration: underline;
+}
+.time {
+  font-size: 12px !important;
+  font-weight: 200;
+  /* opacity: 0.1; */
+}
+
+.connection h4 {
+  margin: 0px;
+  font-weight: 500;
+  font-size: 11px;
+  color: #213053;
+  margin-top: 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .Container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .connection .picture {
+    height: 150px;
+    width: 130px;
+    border-radius: 8px;
+    border: 1px solid rgba(15, 25, 26, 0.5);
+    object-fit: fill;
+  }
+  .heading {
+    font-size: 1.6rem;
+  }
+  .notificationContainer {
+    padding: 10px 10px;
+  }
+  .notification {
+    width: auto;
+    padding: 0.8rem;
+  }
+}

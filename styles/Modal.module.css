@@ -1,0 +1,38 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #fff; */
+  z-index: 1000;
+  /* background: #ffffff; */
+  border: 1px solid rgba(35, 35, 35, 0.1);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.overlayStyle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(10px);
+  animation-name: fade-up;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

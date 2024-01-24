@@ -1,0 +1,154 @@
+.settingsWrapper {
+  display: flex;
+  gap: 30px;
+  /* justify-content: center; */
+  margin-top: 40px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #213053;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 0.4rem;
+}
+
+.profileImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileImage img {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #213053;
+}
+
+.profileImage > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.userDetails {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.userDetails .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+
+.info span:first-child {
+  width: 150px;
+  background: transparent;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.input {
+  padding: 10px;
+  padding-right: 50px;
+  width: 55%;
+  background-color: #fefefe;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  padding: 10px 20px;
+  margin-right: 5px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.uploadButton {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-right: 5px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #1976d2;
+}
+
+.cameraIcon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.reditem {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .settingsWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .reditem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 5px 0px;
+    color: #d90429;
+  }
+
+  .reditem .icon {
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    background-color: #d90429;
+    border-radius: 3px;
+  }
+
+  .item p {
+    color: #0f191a;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+
+  .reditem p {
+    color: #d90429;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+}
