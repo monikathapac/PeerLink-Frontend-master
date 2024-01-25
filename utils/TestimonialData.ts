@@ -1,9 +1,15 @@
+
+
+
+
+
 export interface TestimonialCardProps {
   rating: number;
   quote: string;
   authorName: string;
   authorRole: string;
   authorImage: string;
+
 }
 const testimonialData: TestimonialCardProps[] = [
   {

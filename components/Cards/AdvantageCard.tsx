@@ -4,7 +4,6 @@ import { IconType } from "react-icons";
 interface AdvantageCardProps {
   title: string;
   description: string;
-  link: string;
   icon: IconType;
   iconSize: number;
   iconColor: string;
@@ -13,7 +12,6 @@ interface AdvantageCardProps {
 const AdvantageCard: React.FC<AdvantageCardProps> = ({
   title,
   description,
-  link,
   icon,
   iconSize,
   iconColor,
@@ -30,8 +28,7 @@ const AdvantageCard: React.FC<AdvantageCardProps> = ({
       <div className="">
         {" "}
         <p className="text-sm w-[200px] ">{description}</p>
-        <a href={`${link}`} className="text-base mt-5">
-        </a>
+        
       </div>
     </div>
   );

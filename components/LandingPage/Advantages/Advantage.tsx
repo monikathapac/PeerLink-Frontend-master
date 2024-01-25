@@ -13,7 +13,6 @@ const Advantage = () => {
             key={index}
             title={data.title}
             description={data.description}
-            link={data.readMoreLink}
             icon={data.icon}
             iconSize={data.iconSize}
             iconColor={data.iconColor}
